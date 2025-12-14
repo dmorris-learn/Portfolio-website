@@ -1,0 +1,217 @@
+/* Branding Colors */
+:root {
+    --primary-color: #0899fa;
+    --secondary-color: #2c3e50;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --accent-color: #e74c3c;
+}
+
+/* Apply General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; /* This ensures the scrollbar is always visible */
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Added for better spacing */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer; /* Added for better UX */
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+}
+
+/* Buttons */
+button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #c0392b; /* can keep this color, but consider mixing slightly for better UX */
+}
+
+/* Mobile View (Up to 767px) */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    
+    header {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+/* Tablet View (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+
+    img {
+        width: 140px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+/* Fade-In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scrollbar Styles (Optional) */
+::-webkit-scrollbar {
+    width: 12px;        /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;    /* Color of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;    /* Color of the scroll thumb when hovered */
+}
+
+
+section {
+    /*min-height: 100vh;   /* Ensure each section fills the viewport height */
+    /*padding: 20px;       /* Space within sections */
+    margin-left: 20px;   /* Adjust this value to move sections more to the right */
+    margin-right: 20px;  /* Optional: Add right margin for balance */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Default (Light Mode) */
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --header-color: #1163af;
+    --button-color: #3498db;
+    --button-text-color: white;
+}
+
+/* Dark Mode */
+.dark-mode {
+    --background-color: #121212;
+    --text-color: #f4f4f4;
+    --header-color: #1e1e1e;
+    --button-color: #ff9800;
+    --button-text-color: black;
+}
+
+/* Apply Theme Variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--header-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+button {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ff5722;
+}

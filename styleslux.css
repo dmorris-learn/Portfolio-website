@@ -1,0 +1,154 @@
+/* Branding Colors */
+:root {
+    --primary-color: #005f73; /* A deeper, more luxurious blue */
+    --secondary-color: #0a9396; /* Soft teal */
+    --background-color: #e4f9f5; /* Light background for elegance */
+    --text-color: #001219; /* Dark text for contrast */
+    --accent-color: #ee6f57; /* Corals for a pop of color */
+}
+
+/* Apply General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px; /* Ample padding for a more spacious feel */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    display: flex; /* Flexbox for modern layout */
+    justify-content: center; /* Center align items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Spacious margins */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Add padding for clickability */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    border-radius: 5px; /* Subtle rounding */
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 15px; /* Space below headings */
+    letter-spacing: 0.5px; /* Slight letter spacing for elegance */
+}
+
+/* Buttons */
+button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 25px; /* Sizing for luxury feel */
+    border: none;
+    border-radius: 30px; /* Rounded button for modern look */
+    cursor: pointer;
+    font-size: 16px; /* Increases click target size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+button:hover {
+    background-color: #d95d60; /* Slightly darker on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items on smaller screens */
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0; /* Stack spacing */
+    }
+}
+
+/* Fade-In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scrollbar Styles (Optional) */
+::-webkit-scrollbar {
+    width: 12px;        /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;    /* Color of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;    /* Color of the scroll thumb when hovered */
+}
+
+
+section {
+    /*min-height: 100vh;   /* Ensure each section fills the viewport height */
+    /*padding: 20px;       /* Space within sections */
+    margin-left: 20px;   /* Adjust this value to move sections more to the right */
+    margin-right: 20px;  /* Optional: Add right margin for balance */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #2980b9;
+}
