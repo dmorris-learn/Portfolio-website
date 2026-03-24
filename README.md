@@ -14,6 +14,6 @@ This is my personal portfolio website showcasing my projects, skills, and contac
 
 ## 📞 Contact Me  
 Feel free to connect with me:  
-- 📧 Email: your.email@example.com  
+- 📧 Email: dmorris.learn@gmail.com  
 - 🔗 LinkedIn: [My LinkedIn](https://linkedin.com/in/yourprofile)  
 - 🖥️ GitHub: [My GitHub](https://github.com/yourgithubusername)  
