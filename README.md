@@ -1,7 +1,7 @@
 # Portfolio Website  
 
 ## 🌐 Live Website  
-[View My Portfolio](https://yourgithubusername.github.io/repository-name/)  
+[View My Portfolio](https://dmorris-learn.github.io/Portfolio-website/)  
 
 ## 📌 Project Overview  
 This is my personal portfolio website showcasing my projects, skills, and contact information.  
@@ -15,5 +15,5 @@ This is my personal portfolio website showcasing my projects, skills, and contac
 ## 📞 Contact Me  
 Feel free to connect with me:  
 - 📧 Email: your.email@example.com  
-- 🔗 LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)  
-- 🖥️ GitHub: [Your GitHub](https://github.com/yourgithubusername)  
+- 🔗 LinkedIn: [My LinkedIn](https://linkedin.com/in/yourprofile)  
+- 🖥️ GitHub: [My GitHub](https://github.com/yourgithubusername)  
