@@ -137,6 +137,11 @@ button:hover {
     background: #555;    /* Color of the scroll thumb when hovered */
 }
 
+/* Firefox */
+.selector {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f0f0f0;
+}
 
 section {
     /*min-height: 100vh;   /* Ensure each section fills the viewport height */
