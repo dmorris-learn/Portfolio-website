@@ -215,3 +215,22 @@ button {
 button:hover {
     background-color: #ff5722;
 }
+
+/* Button Hover Effect (Cross-Browser Support) */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Vendor Prefixes */
+button:hover {
+    background-color: #2980b9;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+}
