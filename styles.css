@@ -235,7 +235,81 @@ button {
 /* Vendor Prefixes */
 button:hover {
     background-color: #2980b9;
+     transition: background-color 0.3s ease-in-out;
     -webkit-transition: background-color 0.3s ease-in-out;
     -moz-transition: background-color 0.3s ease-in-out;
     -o-transition: background-color 0.3s ease-in-out;
+}
+
+/* Contact effects */
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #3498db;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #2980b9;
+}
+
+#testimonials {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-left: 5px solid #3498db;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+#highlights {
+    padding: 40px;
+    text-align: center;
+}
+
+.project-card {
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    color: #3498db;
+}
+
+/* Improve focus visibility */
+a:focus, button:focus {
+    outline: 3px solid #ff9800;
+    background-color: #333;
+    color: white;
 }

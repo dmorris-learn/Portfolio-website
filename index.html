@@ -23,11 +23,12 @@
     <!-- Navigation -->
     <header>
     <h1>My Portfolio</h1>
-    <nav aria-label="Main Navigation">
+    <nav aria-label="Main Navigation"> 
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" aria-label="Go to About Me section">About Me</a></li>
+            <li><a href="#projects" aria-label="View my projects">Projects</a></li>
+            <li><a href="#testimonials" aria-label="Read testimonials">Testimonials</a></li>
+            <li><a href="#contact" aria-label="Contact me">Contact</a></li>
         </ul>
     </nav>
     <button id="theme-toggle">🌙 Toggle Dark Mode</button>
@@ -39,7 +40,7 @@
         <h2>About Me</h2>
         <img src="images/profile.jpg" alt="Profile picture of [Your Name]">
        <p>Hello! I'm <strong>Dante'</strong>, a passionate web developer with expertise in front-end and back-end technologies.</p>
-    <h2>Skills & Technologies</h2>
+    <h2><u>Skills & Technologies:</u></h2>
     <ul>
         <li>HTML, CSS, JavaScript</li>
         <li>React.js & Node.js</li>
@@ -51,7 +52,7 @@
 
 <!-- Projects Section -->
     <section id="projects" class="fade-in">
-    <h2>My Projects</h2>
+    <h2><u>My Projects:</u></h2>
     
     <div id="filter-buttons">
         <button onclick="filterProjects('all')">All</button>
@@ -75,11 +76,49 @@
     </div>
     </section>
 
+<section id="testimonials">
+    <h2>What Others Say</h2>
+    
+    <div class="testimonial">
+        <p>"Working with [Your Name] was an amazing experience. Their skills in front-end development are top-notch!"</p>
+        <h4>- John Doe, Instructor</h4>
+    </div>
 
+    <div class="testimonial">
+        <p>"Their project management and attention to detail are impressive. Highly recommend!"</p>
+        <h4>- Jane Smith, Peer Developer</h4>
+    </div>
+</section>
+
+<section id="highlights">
+    <h2>Project Highlights</h2>
+    
+    <div class="project-card">
+        <img src="images/project1.jpg" alt="Project Screenshot">
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio showcasing my skills, projects, and resume.</p>
+    </div>
+
+    <div class="project-card">
+        <img src="images/project2.jpg" alt="Project Screenshot">
+        <h3>To-Do App</h3>
+        <p>A JavaScript-based task management application.</p>
+    </div>
+</section>
 
 <!-- Contact Section -->
     <section id="contact">
-    <h2>Contact Me</h2>
+    <h2><u>Contact Me:</u></h2>
+    <ul>
+        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/yourgithub" target="_blank">GitHub</a></li>
+    </ul>
+    <p>Email: your.email@example.com</p>
+    <h3>Download My Resume - </h3>
+    <a href="resume.pdf" download>
+        <button>📄 Download Resume</button>
+    </a>
+    <h3>Send me a message - </h3>
     <form id="contactForm">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name"autocomplete="on">
@@ -96,7 +135,12 @@
         <button type="submit">Send Message</button>
         <p id="successMessage" style="display:none; color:green;">Message sent successfully!</p>
     </form>
+
+    
+    
+
     </section>
+
 
     <script src="script.js"></script>
 </body>
