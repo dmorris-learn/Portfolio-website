@@ -1,10 +1,10 @@
-# Portfolio Website  
+# Portfolio Website – Final Version (Workforce 360 Capstone)
 
 ## 🌐 Live Website  
 [View My Portfolio](https://dmorris-learn.github.io/Portfolio-website/)  
 
 ## 📌 Project Overview  
-This is my personal portfolio website showcasing my projects, skills, and contact information.  
+This is my final capstone portfolio website showcasing my web development skills, projects, and resume.  
 
 ## 🔧 Technologies Used  
 - HTML  
@@ -12,8 +12,14 @@ This is my personal portfolio website showcasing my projects, skills, and contac
 - JavaScript  
 - GitHub Pages for deployment  
 
+## 🚀 Features  
+✅ Responsive Design  
+✅ Dark Mode Toggle  
+✅ Project Filtering & Animations  
+✅ Downloadable Resume  
+✅ SEO Optimization & Accessibility Enhancements  
+
 ## 📞 Contact Me  
-Feel free to connect with me:  
-- 📧 Email: dmorris.learn@gmail.com  
-- 🔗 LinkedIn: [My LinkedIn](https://linkedin.com/in/yourprofile)  
-- 🖥️ GitHub: [My GitHub](https://github.com/yourgithubusername)  
+- 📧 Email: [Email Me](https://dmorris-learn.github.io/Portfolio-website/) 
+- 🔗 LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)  
+- 🖥️ GitHub: [Your GitHub](https://dmorris-learn.github.io/Portfolio-website/)
