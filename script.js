@@ -94,8 +94,16 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         messageInput.style.border = "1px solid green";
     }
 
-    // If all fields are valid, display success message
+    // If all fields are valid, send an email and display success message
     if (isValid) {
+        const name = encodeURIComponent(nameInput.value.trim() || '');
+        const email = encodeURIComponent(emailInput.value.trim() || '');
+        const message = encodeURIComponent(messageInput.value.trim() || '');
+        const to = 'dmorris.learn@gmail.com';
+        const subject = encodeURIComponent('Website message from ' + (name || email || 'visitor'));
+        const body = encodeURIComponent((message ? message + '\n\n' : '') + 'From: ' + (nameInput.value.trim() || '') + (emailInput.value.trim() ? ' <' + emailInput.value.trim() + '>' : ''));
+        window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+
         document.getElementById("successMessage").style.display = "block";
         setTimeout(() => {
             document.getElementById("successMessage").style.display = "none";

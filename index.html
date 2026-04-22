@@ -134,25 +134,12 @@
         <textarea id="message" name="message" placeholder="Write your message"></textarea>
         <small class="error-message" id="messageError"></small>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" id="sendMessage">Send Message</button>
         <p id="successMessage" style="display:none; color:green;">Message sent successfully!</p>
     </form>
     </section>
 
 <script src="script.js"></script>
 
-<script>
-document.getElementById('Send Message').addEventListener('click', () => {
-  const name = encodeURIComponent(document.getElementById('name').value || '');
-  const email = encodeURIComponent(document.getElementById('email').value || '');
-  const message = encodeURIComponent(document.getElementById('message').value || '');
-  const to = 'dmorris.learn@gmail.com';
-  const subject = encodeURIComponent('Website message from ' + (name || email || 'visitor'));
-  const body = encodeURIComponent((message ? message + '\n\n' : '') + 'From: ' + (name || '') + (email ? ' <' + decodeURIComponent(email) + '>' : ''));
-  window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
-});
-</script>
-
-    
 </body>
 </html>
