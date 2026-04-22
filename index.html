@@ -106,6 +106,12 @@
     </div>
 </section>
 
+<!-- Resume Section -->
+<h3>Download My Resume - </h3>
+    <a href="resume.pdf" download>
+        <button>📄 Download Resume</button>
+    </a>
+
 <!-- Contact Section -->
     <section id="contact">
     <h2><u>Contact Me:</u></h2>
@@ -113,12 +119,8 @@
         <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
         <li><a href="https://github.com/yourgithub" target="_blank">GitHub</a></li>
     </ul>
-    <p>Email: your.email@example.com</p>
-    <h3>Download My Resume - </h3>
-    <a href="resume.pdf" download>
-        <button>📄 Download Resume</button>
-    </a>
-    <h3>Send me a message - </h3>
+
+    <h3>Email/Send me a message - </h3>
     <form id="contactForm">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name"autocomplete="on">
@@ -135,13 +137,22 @@
         <button type="submit">Send Message</button>
         <p id="successMessage" style="display:none; color:green;">Message sent successfully!</p>
     </form>
-
-    
-    
-
     </section>
 
+<script src="script.js"></script>
 
-    <script src="script.js"></script>
+<script>
+document.getElementById('Send Message').addEventListener('click', () => {
+  const name = encodeURIComponent(document.getElementById('name').value || '');
+  const email = encodeURIComponent(document.getElementById('email').value || '');
+  const message = encodeURIComponent(document.getElementById('message').value || '');
+  const to = 'dmorris.learn@gmail.com';
+  const subject = encodeURIComponent('Website message from ' + (name || email || 'visitor'));
+  const body = encodeURIComponent((message ? message + '\n\n' : '') + 'From: ' + (name || '') + (email ? ' <' + decodeURIComponent(email) + '>' : ''));
+  window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+});
+</script>
+
+    
 </body>
 </html>
