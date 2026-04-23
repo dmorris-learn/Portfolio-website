@@ -1,4 +1,4 @@
-# Portfolio Website – Final Version (Workforce 360 Capstone)
+# Portfolio Website – Final Version (MCA Workforce 360 Capstone)
 
 ## 🌐 Live Website  
 [View My Portfolio](https://dmorris-learn.github.io/Portfolio-website/)  
@@ -21,5 +21,5 @@ This is my final capstone portfolio website showcasing my web development skills
 
 ## 📞 Contact Me  
 - 📧 [Email](mailto:dmorris.learn@gmail.com?subject=Inquiry&body=Hi%2C%0A%0AI%20have%20a%20question%20about%20your%20project.%0A%0AThanks%2C%0A%5BYour%20Name%5D)
-- 🔗 [LinkedIn](https://linkedin.com/in/yourprofile)  
-- 🖥️ [GitHub](https://dmorris-learn.github.io/Portfolio-website/)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/dantemorris/)  
+- 🖥️ [GitHub](https://github.com/dmorris-learn/Portfolio-website)
