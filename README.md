@@ -20,6 +20,6 @@ This is my final capstone portfolio website showcasing my web development skills
 ✅ SEO Optimization & Accessibility Enhancements  
 
 ## 📞 Contact Me  
-- 📧 Email: [My LinkedIn] you@example.com
+- 📧 Email: [My LinkedIn](you@example.com)
 - 🔗 LinkedIn: [My LinkedIn](https://linkedin.com/in/yourprofile)  
 - 🖥️ GitHub: [My GitHub](https://dmorris-learn.github.io/Portfolio-website/)
