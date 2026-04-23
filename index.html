@@ -17,16 +17,16 @@
     <meta property="og:image" content="https://yourgithubusername.github.io/repository-name/images/profile.jpg">
     <meta property="og:url" content="https://yourgithubusername.github.io/repository-name/">
     
-
 </head>
+
 <body>
     <!-- Navigation -->
     <header>
-    <h1>My Portfolio</h1>
+    <h1>Dante's Portfolio</h1>
     <nav aria-label="Main Navigation"> 
         <ul>
             <li><a href="#about" aria-label="Go to About Me section">About Me</a></li>
-            <li><a href="#projects" aria-label="View my projects">Projects</a></li>
+            <li><a href="#projects" aria-label="View Dante's projects">Projects</a></li>
             <li><a href="#testimonials" aria-label="Read testimonials">Testimonials</a></li>
             <li><a href="#contact" aria-label="Contact me">Contact</a></li>
         </ul>
@@ -36,94 +36,116 @@
 
    
 <!-- About Me Section -->
-    <section id="about" class="fade-in">
-        <h2>About Me</h2>
-        <img src="images/profile.jpg" alt="Profile picture of [Your Name]">
-       <p>Hello! I'm <strong>Dante'</strong>, a passionate web developer with expertise in front-end and back-end technologies.</p>
-    <h2><u>Skills & Technologies:</u></h2>
-    <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>React.js & Node.js</li>
-        <li>Python & API Development</li>
-        <li>GitHub & Version Control</li>
-    </ul>
-</section>
+    <div class="about-grid">
+        <section id="about" class="fade-in about-content">
+            <div class="about-left">
+                <h2>About Me</h2>
+               <img src="images/Mojo.png" alt="Profile picture of Mojo">
+             <p>Hello, I'm <strong>Mojo</strong>! I am Dante's Avatar! He is a new but passionate web developer learning about front-end and back-end technologies. He is also interested in AI, Robots and Data Analysis.</p>
+            </div>
 
+            <div class="about-right" id="testimonials">
+                <h2>Testimonials</h2>
 
-<!-- Projects Section -->
-    <section id="projects" class="fade-in">
-    <h2><u>My Projects:</u></h2>
-    
-    <div id="filter-buttons">
-        <button onclick="filterProjects('all')">All</button>
-        <button onclick="filterProjects('web')">Web Development</button>
-        <button onclick="filterProjects('python')">Python Projects</button>
+                <div class="testimonial">
+                    <p>"He is extremely detail-oriented, excellent with following through on assignments, and always remained pleasant to work with."</p>
+                    <h4>- Julie B., Sr Associate</h4>
+                </div>
+
+                <div class="testimonial">
+                    <p>"Dante is a quick study and not afraid to ask questions to ensure the end product is delivered to the caliber that is expected."</p>
+                    <h4>- Tom B., SVP</h4>
+                </div>
+
+                <p class="linkedin-link"><a href="https://www.linkedin.com/in/dantemorris/" target="_blank" rel="noopener noreferrer">Check out Dante's LinkedIn profile</a></p>
+            </div>
+        </section>
     </div>
 
-    <div class="project" data-category="web">
-        <h3>Portfolio Website</h3>
-        <p>A website showcasing my resume, projects, and skills.</p>
+<!-- Audio Introduction Section -->
+    <div id="audio-panel" class="fade-in">
+        <h2>Audio Introduction</h2>
+        <audio controls>
+            <source src="images/mojo audio.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
     </div>
 
-    <div class="project" data-category="python">
-        <h3>Data Analysis Script</h3>
-        <p>A Python script that processes and visualizes data.</p>
-    </div>
+<!-- Skills & Technologies -->
+    <section id="skills" class="fade-in">
 
-    <div class="project" data-category="web">
-        <h3>To-Do List App</h3>
-        <p>A simple JavaScript to-do list application.</p>
-    </div>
+            <h2><u>Skills & Technologies</u></h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python & API Development</li>
+                <li>GitHub & Version Control - <a href="https://github.com/dmorris-learn/Portfolio-website">Check out Dante's GitHub</a></li>
+            </ul>
     </section>
 
-<section id="testimonials">
-    <h2>What Others Say</h2>
-    
-    <div class="testimonial">
-        <p>"Working with [Your Name] was an amazing experience. Their skills in front-end development are top-notch!"</p>
-        <h4>- John Doe, Instructor</h4>
-    </div>
+<!-- Projects Section -->
+    <div class="projects-grid"></div>
+            <section id="projects" class="fade-in">
+                <h2><u>Dante's Projects:</u></h2>
+                
+                <div id="filter-buttons">
+                    <button onclick="filterProjects('all')">All</button>
+                    <button onclick="filterProjects('web')">Web Development</button>
+                    <button onclick="filterProjects('python')">Python Projects</button>
+                </div>
 
-    <div class="testimonial">
-        <p>"Their project management and attention to detail are impressive. Highly recommend!"</p>
-        <h4>- Jane Smith, Peer Developer</h4>
-    </div>
-</section>
+                <div class="project" data-category="web">
+                    <h3>Portfolio Website</h3>
+                    <p>A website showcasing my resume, projects, and skills.</p>
+                </div>
 
-<section id="highlights">
-    <h2>Project Highlights</h2>
-    
-    <div class="project-card">
-        <img src="images/project1.jpg" alt="Project Screenshot">
-        <h3>Portfolio Website</h3>
-        <p>A responsive portfolio showcasing my skills, projects, and resume.</p>
-    </div>
+                <div class="project" data-category="python">
+                    <h3>Python Projects</h3>
+                    <p>Projects coming soon...</p>
+                </div>
 
-    <div class="project-card">
-        <img src="images/project2.jpg" alt="Project Screenshot">
-        <h3>To-Do App</h3>
-        <p>A JavaScript-based task management application.</p>
-    </div>
-</section>
+               <!--  format for future web dev projects: 
+                <div class="project" data-category="web">
+                    <h3>To-Do List App</h3>
+                    <p>A simple JavaScript to-do list application.</p> 
+                </div>---->
+            </section>
 
-<!-- Resume Section -->
-<h3>Download My Resume - </h3>
-    <a href="resume.pdf" download>
-        <button>📄 Download Resume</button>
-    </a>
+            <section id="highlights" class="fade-in">
+                <h2>Project Highlights</h2>
+                
+                <div class="project-card" data-category="web">
+                    <img src="images/project1.jpg" alt="Project Screenshot">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive portfolio showcasing my skills, projects, and resume.</p>
+                </div>
+            <!-- future web dev project format:
+            <div class="project-card" data-category="web">
+                <img src="images/project2.jpg" alt="Project Screenshot">
+                <h3>To-Do App</h3>
+                <p>A JavaScript-based task management application.</p>
+            </div> -->
+
+            <div class="project-card" data-category="python">
+                <img src="images/project2.jpg" alt="Project Screenshot">
+                <h3>Future Python Project</h3>
+                <p>Coming soon...</p>
+            </div> 
+        </section>
+        </div>
+
+    <section id="resume" class="fade-in">
+        <h2><u>Download Dante's Resume</u></h2>
+        <a href="resume.pdf" download>
+            <button>📄 Download Resume</button>
+        </a>
+    </section>
 
 <!-- Contact Section -->
     <section id="contact">
-    <h2><u>Contact Me:</u></h2>
-    <ul>
-        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/yourgithub" target="_blank">GitHub</a></li>
-    </ul>
-
-    <h3>Email/Send me a message - </h3>
+    <h2><u>Send Dante a Message:</u></h2>
     <form id="contactForm">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name"autocomplete="on">
+        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="on">
         <small class="error-message" id="nameError"></small>
 
         <label for="email">Email:</label>

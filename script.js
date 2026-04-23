@@ -8,12 +8,21 @@ document.addEventListener("keydown", function(event) {
 // Project Filtering Function
 function filterProjects(category) {
     let projects = document.querySelectorAll(".project");
+    let highlights = document.querySelectorAll(".project-card");
     
     projects.forEach(project => {
         if (category === "all" || project.dataset.category === category) {
             project.style.display = "block";
         } else {
             project.style.display = "none";
+        }
+    });
+
+    highlights.forEach(card => {
+        if (category === "all" || card.dataset.category === category) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
         }
     });
 }
